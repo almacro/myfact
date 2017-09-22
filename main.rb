@@ -1,11 +1,12 @@
 n, rest_args = ARGV
 
 def factorial(n)
-  if n == 0
-    return 1
-  else
-    return n*factorial(n - 1)
+  sum = 1
+  until n == 0
+    sum *= n
+    n -= 1
   end
+  sum
 end
 
 n = n.to_i

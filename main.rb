@@ -9,6 +9,9 @@ def factorial(n)
   sum
 end
 
-n = n.to_i
-puts "#{n}! = #{factorial(n)}"
-
+if n
+  n = n.to_i
+  puts "#{n}! = #{factorial(n)}"
+else
+  puts 'error: expected int arg'
+end
